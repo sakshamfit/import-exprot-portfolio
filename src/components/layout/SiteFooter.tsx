@@ -155,7 +155,23 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="shell flex flex-col gap-4 border-t border-white/10 py-6 text-[0.84rem] text-white/55 sm:flex-row sm:items-center sm:justify-between">
-          <p>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
+            <span className="mx-2 text-white/25" aria-hidden>
+              ·
+            </span>
+            <span>
+              Made by{" "}
+              <a
+                href="https://github.com/sakshamfit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-white/80 transition-colors hover:text-white"
+              >
+                sakshamfit
+              </a>
+            </span>
+          </p>
           <a href="#main" className="inline-flex min-h-11 items-center gap-2 text-white/75 hover:text-white">
             Back to top
             <ArrowUp size={15} aria-hidden />
